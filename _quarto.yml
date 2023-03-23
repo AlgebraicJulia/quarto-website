@@ -1,0 +1,27 @@
+project:
+  type: website
+
+bibliography: bibliography.bib
+
+website:
+  title: "."
+  favicon: _assets/brand/favicon.ico
+  navbar:
+    logo: _assets/brand/logo-darkbg.svg
+    collapse-below: sm
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    html-math-method: katex
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    monofont: JuliaMono-Regular
+
+from: markdown+tex_math_single_backslash

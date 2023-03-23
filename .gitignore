@@ -1,0 +1,12 @@
+.DS_Store
+.auctex-auto/
+
+Manifest.toml
+
+/.quarto/
+/_site/
+
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
