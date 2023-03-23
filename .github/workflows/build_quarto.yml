@@ -64,7 +64,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          persist-credentials: false
+          ref: ${{ github.head_ref }}
       - name: Remove old _freeze directory
         run: rm -rf _freeze
       - name: Get new _freeze directory
