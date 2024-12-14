@@ -25,3 +25,6 @@ format:
     monofont: JuliaMono-Regular
 
 from: markdown+tex_math_single_backslash
+
+filters:
+  - filters.lua
