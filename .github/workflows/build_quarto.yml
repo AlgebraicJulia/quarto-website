@@ -17,12 +17,6 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: _site
-      - name: Delete all artifacts
-        uses: geekyeggo/delete-artifact@v2
-        with:
-          name: |
-            _site
-            _freeze
       - name: Deploy Preview
         uses: nwtgck/actions-netlify@v2
         with:
@@ -73,10 +67,6 @@ jobs:
         with:
           name: _freeze
           path: _freeze
-      - name: Delete _freeze artifact
-        uses: geekyeggo/delete-artifact@v2
-        with:
-          name: _freeze
       - name: Commit updated _freeze directory
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
