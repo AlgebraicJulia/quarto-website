@@ -94,7 +94,7 @@ function CodeBlock(el)
   if tikz_template ~= nil then
     return pandoc.Div(
       memoize_svg(el.text, tikz2image(tikz_template), tikz_template[1] .. tikz_template[2]),
-      { class = "tikzcd" }
+      { class = el.classes[1] }
     )
   elseif el.classes[1] == "graphviz" then
     return pandoc.Div(memoize_svg(el.text, graphviz2image, "graphviz"), { class = "graphviz" })
