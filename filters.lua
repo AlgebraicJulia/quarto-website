@@ -97,7 +97,7 @@ function CodeBlock(el)
       { class = "tikzcd" }
     )
   elseif el.classes[1] == "graphviz" then
-    return pandoc.Div(memoize_svg(el.text, graphviz2image, "graphviz"), { class = "graphvizz" })
+    return pandoc.Div(memoize_svg(el.text, graphviz2image, "graphviz"), { class = "graphviz" })
   else
     return el
   end
